@@ -1,23 +1,83 @@
 // Sample data for Tarot cards (replace with your own data)
 const tarotCards = [
-  { name: "Card 1", description: "Description of Card 1", image: "0_The_Fool.jpg" },
-  { name: "Card 2", description: "Description of Card 2", image: "1_The_Magician.jpg" },
-  { name: "Card 3", description: "Description of Card 3", image: "2_The_High_Priestess.jpg" },
-  { name: "Card 4", description: "Description of Card 4", image: "3_The_Empress.jpg" },
-  { name: "Card 5", description: "Description of Card 5", image: "4_The_Emperor.jpg" },
-  { name: "Card 6", description: "Description of Card 6", image: "5_The_Hierophant.jpg" },
-  { name: "Card 7", description: "Description of Card 1", image: "0_The_Fool.jpg" },
-  { name: "Card 8", description: "Description of Card 2", image: "1_The_Magician.jpg" },
-  { name: "Card 9", description: "Description of Card 3", image: "2_The_High_Priestess.jpg" },
-  { name: "Card 10", description: "Description of Card 4", image: "3_The_Empress.jpg" },
-  { name: "Card 11", description: "Description of Card 5", image: "4_The_Emperor.jpg" },
-  { name: "Card 12", description: "Description of Card 6", image: "5_The_Hierophant.jpg" },
-  { name: "Card 13", description: "Description of Card 1", image: "0_The_Fool.jpg" },
-  { name: "Card 14", description: "Description of Card 2", image: "1_The_Magician.jpg" },
-  { name: "Card 15", description: "Description of Card 3", image: "2_The_High_Priestess.jpg" },
-  { name: "Card 16", description: "Description of Card 4", image: "3_The_Empress.jpg" },
-  { name: "Card 17", description: "Description of Card 5", image: "4_The_Emperor.jpg" },
-  { name: "Card 18", description: "Description of Card 6", image: "5_The_Hierophant.jpg" },
+  { name: "The Fool", description: "Doot de doot de doot, whatever could possibly happen to me on this unknown path to adventure? Oh who cares, I'm sure it will all be ups and no downs", image: "00fool.jpg" },
+  { name: "The Magician", description: "Tools and toys can be the same thing if you only play and never work.", image: "TheMagician.jpg" },
+  { name: "The High Priestess", description: "Pshhhhhhh lemme hit this a sec and then I'ma tell you the secret that is at the heart of all existence... *hits bong* *hits it again* *long exhale* Okay, okay... what were we talking about?", image: "02priestess.jpg" },
+  { name: "The Empress", description: "Description of Card 4", image: "03empress.jpg" },
+  { name: "The Emperor", description: "Description of Card 5", image: "04emperor.jpg" },
+  { name: "The Hierophant", description: "Description of Card 6", image: "05hierophant.jpg" },
+  { name: "The Lovers", description: "Description of Card 1", image: "06lovers.jpg" },
+  { name: "The Chariot", description: "Description of Card 2", image: "07chariot.jpg" },
+  { name: "Strength", description: "Description of Card 3", image: "08strength.jpg" },
+  { name: "The Hermit", description: "Description of Card 4", image: "09hermit.jpg" },
+  { name: "The Wheel of Fortune", description: "Description of Card 5", image: "10wheel.jpg" },
+  { name: "Justice", description: "Description of Card 6", image: "11justice.jpg" },
+  { name: "The Hanged Man", description: "Description of Card 1", image: "12hangedman.jpg" },
+  { name: "Death", description: "I'm sorry, but was this left out all day? Outside? In the sun? Uncovered? Thank you, if you need me I'll be in the vomitorium.", image: "Death.jpg" },
+  { name: "Temperance", description: "Description of Card 3", image: "14temperance.jpg" },
+  { name: "The Devil", description: "Description of Card 4", image: "15devil.jpg" },
+  { name: "The Tower", description: "Description of Card 5", image: "16tower.jpg" },
+  { name: "The Star", description: "Description", image: "17star.jpg" },
+  { name: "The Moon", description: "Description", image: "18moon.jpg" },
+  { name: "The Sun", description: "BLAZE, BETCH! Glow like the glory of a thousand suns that are having a spa day.", image: "19sun.jpg" },
+  { name: "Judgement", description: "Dun dun DUNNNNNNNNNNNNNNNNNNN. Dramatic reveal!", image: "20judgement.jpg" },
+  { name: "The World", description: "Lookitchoo! Getting all high and up oer errything. Seems like you get all them jealous bitchezz eating out of the palm of your hand. Keep it up!", image: "21world.jpg" },
+  { name: "Ace of Wands", description: "Description of Card 3", image: "wands01ace.jpg" },    
+  { name: "Two of Wands", description: "Description of Card 3", image: "wands02.jpg" },   
+  { name: "Three of Wands", description: "Description of Card 3", image: "wands03.jpg" },    
+  { name: "Four of Wands", description: "Description of Card 3", image: "wands04.jpg" }, 
+  { name: "Five of Wands", description: "Description of Card 3", image: "wands05.jpg" },    
+  { name: "Six of Wands", description: "Description of Card 3", image: "wands06.jpg" },   
+  { name: "Seven of Wands", description: "Description of Card 3", image: "wands07.jpg" },    
+  { name: "Eight of Wands", description: "Description of Card 3", image: "wands08.jpg" }, 
+  { name: "Nine of Wands", description: "Description of Card 3", image: "wands09.jpg" },    
+  { name: "Ten of Wands", description: "Description of Card 3", image: "wands10.jpg" },   
+  { name: "Page of Wands", description: "Description of Card 3", image: "wands11page.jpg" },    
+  { name: "Knight of Wands", description: "Description of Card 3", image: "wands12knight.jpg" }, 
+  { name: "Queen of Wands", description: "Description of Card 3", image: "wands13queen.jpg" },    
+  { name: "King of Wands", description: "Description of Card 3", image: "wands14king.jpg" },     
+  { name: "Ace of Cups", description: "Description of Card 3", image: "cups01ace.jpg" },    
+  { name: "Two of Cups", description: "Description of Card 3", image: "cups02.jpg" },   
+  { name: "Three of Cups", description: "Description of Card 3", image: "cups03.jpg" },    
+  { name: "Four of Cups", description: "Description of Card 3", image: "cups04.jpg" }, 
+  { name: "Five of Cups", description: "Description of Card 3", image: "cups05.jpg" },    
+  { name: "Six of Cups", description: "Description of Card 3", image: "cups06.jpg" },   
+  { name: "Seven of Cups", description: "Description of Card 3", image: "cups07.jpg" },    
+  { name: "Eight of Cups", description: "Description of Card 3", image: "cups08.jpg" }, 
+  { name: "Nine of Cups", description: "Description of Card 3", image: "cups09.jpg" },    
+  { name: "Ten of Cups", description: "Description of Card 3", image: "cups10.jpg" },   
+  { name: "Page of Cups", description: "Description of Card 3", image: "cups11page.jpg" },    
+  { name: "Knight of Cups", description: "Description of Card 3", image: "cups12knight.jpg" }, 
+  { name: "Queen of Cups", description: "Description of Card 3", image: "cups13queen.jpg" },    
+  { name: "King of Cups", description: "Description of Card 3", image: "cups14king.jpg" },   
+  { name: "Ace of Swords", description: "Description of Card 3", image: "swords01ace.jpg" },    
+  { name: "Two of Swords", description: "Description of Card 3", image: "swords02.jpg" },   
+  { name: "Three of Swords", description: "Description of Card 3", image: "swords03.jpg" },    
+  { name: "Four of Swords", description: "Description of Card 3", image: "swords04.jpg" }, 
+  { name: "Five of Swords", description: "Description of Card 3", image: "swords05.jpg" },    
+  { name: "Six of Swords", description: "Description of Card 3", image: "swords06.jpg" },   
+  { name: "Seven of Swords", description: "Description of Card 3", image: "swords07.jpg" },    
+  { name: "Eight of Swords", description: "Description of Card 3", image: "swords08.jpg" }, 
+  { name: "Nine of Swords", description: "Description of Card 3", image: "swords09.jpg" },    
+  { name: "Ten of Swords", description: "Description of Card 3", image: "swords10.jpg" },   
+  { name: "Page of Swords", description: "Description of Card 3", image: "swords11page.jpg" },    
+  { name: "Knight of Swords", description: "Description of Card 3", image: "swords12knight.jpg" }, 
+  { name: "Queen of Swords", description: "Description of Card 3", image: "swords13queen.jpg" },    
+  { name: "King of Swords", description: "Description of Card 3", image: "swords14king.jpg" },    
+  { name: "Ace of Pentacles", description: "Description of Card 3", image: "pents01ace.jpg" },    
+  { name: "Two of Pentacles", description: "fake it til you break it into a thousand tiny little pieces", image: "TwoofPentacles.png" },   
+  { name: "Three of Pentacles", description: "Description of Card 3", image: "pents03.jpg" },    
+  { name: "Four of Pentacles", description: "Description of Card 3", image: "pents04.jpg" }, 
+  { name: "Five of Pentacles", description: "Description of Card 3", image: "pents05.jpg" },    
+  { name: "Six of Pentacles", description: "Description of Card 3", image: "pents06.jpg" },   
+  { name: "Seven of Pentacles", description: "Description of Card 3", image: "pents07.jpg" },    
+  { name: "Eight of Pentacles", description: "Description of Card 3", image: "pents08.jpg" }, 
+  { name: "Nine of Pentacles", description: "Description of Card 3", image: "pents09.jpg" },    
+  { name: "Ten of Pentacles", description: "Description of Card 3", image: "pents10.jpg" },   
+  { name: "Page of Pentacles", description: "Description of Card 3", image: "pents11page.jpg" },    
+  { name: "Knight of Pentacles", description: "Description of Card 3", image: "pents12knight.jpg" }, 
+  { name: "Queen of Pentacles", description: "Description of Card 3", image: "pents13queen.jpg" },    
+  { name: "King of Pentacles", description: "Description of Card 3", image: "pents14king.jpg" },     
   // Add more cards as needed
 ];
 
@@ -102,17 +162,6 @@ function closePopup() {
 // Call the displayPopup function to start the timer
 displayPopup();
 
-
-  // Initialize MIDI.js
-  MIDI.loadPlugin({
-    soundfontUrl: "https://raw.githubusercontent.com/mudcube/MIDI.js/master/examples/soundfont/",
-    instrument: "acoustic_grand_piano", // Instrument to use (e.g., piano)
-    onsuccess: function() {
-      // Load and play MIDI file
-      MIDI.Player.loadFile("aquarius09.mid", function() {
-        MIDI.Player.start();
-      });
-    }
-  });
-
-
+function printPage() {
+  window.print();
+}

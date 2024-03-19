@@ -13,7 +13,7 @@ body {
 }
 
 #boxImage img {
-  border: 5px solid #ff0000; /* Red border around the box image */
+  border: 1px solid #000000; /* Red border around the box image */
   border-radius: 10px; /* Rounded corners */
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Drop shadow effect */
 }
@@ -22,6 +22,8 @@ body {
   border: 2px solid #00ff00; /* Green border around card info */
   margin: 20px 0;
   padding: 10px;
+	border-radius: 10px; /* Rounded corners */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Drop shadow effect */
 }
 
 button {
@@ -49,7 +51,10 @@ button {
   width: 220px; /* Adjust size as needed */
   height: 220px; /* Adjust size as needed */
   animation: pulse 1s infinite alternate; /* Example animation */
-  padding: 20px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  margin: 20px 0px 0px 0px;
+    border-radius: 10px; /* Rounded corners */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Drop shadow effect */
 }
 
 @keyframes pulse {
@@ -142,7 +147,8 @@ h1 {
 
 .card-description {
   font-size: 12px;
-  text-align: center;
+  max-width: 240px;
+  text-align: left;
 }
 
 /* Display all card readings in the same container */
@@ -251,4 +257,87 @@ h1 {
 
 #popupContent {
   text-align: center;
+}
+
+.card-container {
+  perspective: 1000px;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  cursor: pointer; /* Add cursor pointer for clickable effect */
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: white;
+}
+
+.card-back {
+  background-color: #f0f0f0;
+  transform: rotateY(180deg);
+}
+
+.card-container.flipped .card {
+  transform: rotateY(180deg);
+}
+
+/* Print-specific styles */
+@media print {
+  body {
+    font-size: 12pt; /* Adjust font size for printing */
+  }
+
+  .mini-mp3-player {
+    display: none; /* Hide cards when printing */
+  }
+  
+  button {
+    display: none; /* Hide when printing */
+  }
+
+#boxImage {
+  display: none; 
+  }
+
+h1 {
+  display: none;
+  }
+
+.container {
+  width: 100%;
+  margin: 0px;
+    box-shadow:none;
+    padding: 0px;
+    align: center;
+}
+
+.card-info {
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  	border-radius: 10px;
+  box-shadow: none;
+}
+
+#popupContainer {
+  display: none;
+}
+
+#popupContent {
+  display: none;
+}
+
+
 }
