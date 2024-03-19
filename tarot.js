@@ -3,8 +3,8 @@ const tarotCards = [
   { name: "The Fool", description: "Doot de doot de doot, whatever could possibly happen to me on this unknown path to adventure? Oh who cares, I'm sure it will all be ups and no downs", image: "00fool.jpg" },
   { name: "The Magician", description: "Tools and toys can be the same thing if you only play and never work.", image: "TheMagician.jpg" },
   { name: "The High Priestess", description: "Pshhhhhhh lemme hit this a sec and then I'ma tell you the secret that is at the heart of all existence... *hits bong* *hits it again* *long exhale* Okay, okay... what were we talking about?", image: "02priestess.jpg" },
-  { name: "The Empress", description: "Description of Card 4", image: "03empress.jpg" },
-  { name: "The Emperor", description: "Description of Card 5", image: "04emperor.jpg" },
+  { name: "The Empress", description: "Gurrrrrrl are you an entire garden? Cuz I wanna spread my seed all over you.", image: "03empress.jpg" },
+  { name: "The Emperor", description: "Alistair Crowley may be the father of modern occultism, but The Emperor is our OG ZADDY", image: "04emperor.jpg" },
   { name: "The Hierophant", description: "Description of Card 6", image: "05hierophant.jpg" },
   { name: "The Lovers", description: "Description of Card 1", image: "06lovers.jpg" },
   { name: "The Chariot", description: "Description of Card 2", image: "07chariot.jpg" },
@@ -18,10 +18,10 @@ const tarotCards = [
   { name: "The Devil", description: "Description of Card 4", image: "15devil.jpg" },
   { name: "The Tower", description: "Description of Card 5", image: "16tower.jpg" },
   { name: "The Star", description: "Description", image: "17star.jpg" },
-  { name: "The Moon", description: "Description", image: "18moon.jpg" },
+  { name: "The Moon", description: "Oh, yeah. Something is definitely headed your way. Something MAJOR. Something life-changing. You should start preparing ASAP. Kinda hard to tell what it is, though.", image: "18moon.jpg" },
   { name: "The Sun", description: "BLAZE, BETCH! Glow like the glory of a thousand suns that are having a spa day.", image: "19sun.jpg" },
   { name: "Judgement", description: "Dun dun DUNNNNNNNNNNNNNNNNNNN. Dramatic reveal!", image: "20judgement.jpg" },
-  { name: "The World", description: "Lookitchoo! Getting all high and up oer errything. Seems like you get all them jealous bitchezz eating out of the palm of your hand. Keep it up!", image: "21world.jpg" },
+  { name: "The World", description: "Lookitchoo! Getting all high and up oer errything. Seems like you get all them jealous bitchezz eating outta the palm of your hand. Keep it up, badass!", image: "21world.jpg" },
   { name: "Ace of Wands", description: "Description of Card 3", image: "wands01ace.jpg" },    
   { name: "Two of Wands", description: "Description of Card 3", image: "wands02.jpg" },   
   { name: "Three of Wands", description: "Description of Card 3", image: "wands03.jpg" },    
@@ -151,7 +151,7 @@ function displaySpread(spread) {
 function displayPopup() {
   setTimeout(function() {
     document.getElementById("popupContainer").style.display = "block";
-  }, 5000); // 5000 milliseconds = 5 seconds
+  }, 5); // 5 milliseconds
 }
 
 // Function to close the pop-up
