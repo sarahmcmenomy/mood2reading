@@ -1,14 +1,14 @@
 // Sample data for Tarot cards (replace with your own data)
 const tarotCards = [
-  { name: "The Fool", description: "Doot de doot de doot, whatever could possibly happen to me on this unknown path to adventure? Oh who cares, I'm sure it will all be ups and no downs", image: "00fool.jpg" },
-  { name: "The Magician", description: "Tools and toys can be the same thing if you only play and never work.", image: "TheMagician.jpg" },
-  { name: "The High Priestess", description: "Pshhhhhhh lemme hit this a sec and then I'ma tell you the secret that is at the heart of all existence... *hits bong* *hits it again* *long exhale* Okay, okay... what were we talking about?", image: "02priestess.jpg" },
-  { name: "The Empress", description: "Gurrrrrrl are you an entire garden? Cuz I wanna spread my seed all over you.", image: "03empress.jpg" },
-  { name: "The Emperor", description: "Alistair Crowley may be the father of modern occultism, but The Emperor is our OG ZADDY", image: "04emperor.jpg" },
+  { name: "The Fool", description: "Nothing bad is going to happen to you. It'll be just fine. All ups, no downs. Here we go.", image: "00fool.jpg" },
+  { name: "The Magician", description: "Tools and toys are the same thing if you only play and never work.", image: "TheMagician.jpg" },
+  { name: "The High Priestess", description: "Take a load off and get blitzed for a break. You don't have to be ON all the time.", image: "02priestess.jpg" },
+  { name: "The Empress", description: "Don't", image: "03empress.jpg" },
+  { name: "The Emperor", description: "He's a man's man and a zaddy's zaddy.", image: "04emperor.jpg" },
   { name: "The Hierophant", description: "Description of Card 6", image: "05hierophant.jpg" },
   { name: "The Lovers", description: "Description of Card 1", image: "06lovers.jpg" },
   { name: "The Chariot", description: "Description of Card 2", image: "07chariot.jpg" },
-  { name: "Strength", description: "Description of Card 3", image: "08strength.jpg" },
+  { name: "Strength", description: "It's a candle, not a candy, and YOU'VE HAD PLENTY ALREADY.", image: "08strength.jpg" },
   { name: "The Hermit", description: "Description of Card 4", image: "09hermit.jpg" },
   { name: "The Wheel of Fortune", description: "Description of Card 5", image: "10wheel.jpg" },
   { name: "Justice", description: "Description of Card 6", image: "11justice.jpg" },
@@ -25,15 +25,15 @@ const tarotCards = [
   { name: "Ace of Wands", description: "Description of Card 3", image: "wands01ace.jpg" },    
   { name: "Two of Wands", description: "Description of Card 3", image: "wands02.jpg" },   
   { name: "Three of Wands", description: "Description of Card 3", image: "wands03.jpg" },    
-  { name: "Four of Wands", description: "Description of Card 3", image: "wands04.jpg" }, 
+  { name: "Four of Wands", description: "FLOWAHS, getcha FLOWAHS here, anybuddy want some fuxxin FLOWAHS", image: "wands04.jpg" }, 
   { name: "Five of Wands", description: "Description of Card 3", image: "wands05.jpg" },    
-  { name: "Six of Wands", description: "Description of Card 3", image: "wands06.jpg" },   
+  { name: "Six of Wands", description: "Pretty nice stick. Pretty nice. Don't see any of you havin a nice big stick like mine. Hell, it deserves its own crown.", image: "wands06.jpg" },   
   { name: "Seven of Wands", description: "Description of Card 3", image: "wands07.jpg" },    
   { name: "Eight of Wands", description: "Description of Card 3", image: "wands08.jpg" }, 
   { name: "Nine of Wands", description: "Description of Card 3", image: "wands09.jpg" },    
   { name: "Ten of Wands", description: "Description of Card 3", image: "wands10.jpg" },   
   { name: "Page of Wands", description: "Description of Card 3", image: "wands11page.jpg" },    
-  { name: "Knight of Wands", description: "Description of Card 3", image: "wands12knight.jpg" }, 
+  { name: "Knight of Wands", description: "Whoa! Whoa boy! That's not a snake. That's just another dildo!", image: "wands12knight.jpg" }, 
   { name: "Queen of Wands", description: "Description of Card 3", image: "wands13queen.jpg" },    
   { name: "King of Wands", description: "Description of Card 3", image: "wands14king.jpg" },     
   { name: "Ace of Cups", description: "Description of Card 3", image: "cups01ace.jpg" },    
@@ -58,7 +58,7 @@ const tarotCards = [
   { name: "Six of Swords", description: "Description of Card 3", image: "swords06.jpg" },   
   { name: "Seven of Swords", description: "Description of Card 3", image: "swords07.jpg" },    
   { name: "Eight of Swords", description: "Description of Card 3", image: "swords08.jpg" }, 
-  { name: "Nine of Swords", description: "Description of Card 3", image: "swords09.jpg" },    
+  { name: "Nine of Swords", description: "It's worth waiting to shave your legs until after the caffeine jitters have subsided. I know you have a date later but... just trust me and wait.", image: "swords09.jpg" },    
   { name: "Ten of Swords", description: "Description of Card 3", image: "swords10.jpg" },   
   { name: "Page of Swords", description: "Description of Card 3", image: "swords11page.jpg" },    
   { name: "Knight of Swords", description: "Description of Card 3", image: "swords12knight.jpg" }, 
@@ -76,7 +76,7 @@ const tarotCards = [
   { name: "Ten of Pentacles", description: "Description of Card 3", image: "pents10.jpg" },   
   { name: "Page of Pentacles", description: "Description of Card 3", image: "pents11page.jpg" },    
   { name: "Knight of Pentacles", description: "Description of Card 3", image: "pents12knight.jpg" }, 
-  { name: "Queen of Pentacles", description: "Description of Card 3", image: "pents13queen.jpg" },    
+  { name: "Queen of Pentacles", description: "Can I have a box? I don't think I can finish the whole thing.", image: "pents13queen.jpg" },    
   { name: "King of Pentacles", description: "Description of Card 3", image: "pents14king.jpg" },     
   // Add more cards as needed
 ];
@@ -165,3 +165,4 @@ displayPopup();
 function printPage() {
   window.print();
 }
+
