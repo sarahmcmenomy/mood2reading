@@ -1,0 +1,371 @@
+body {
+  background-color: #000; /* Black background */
+  background-image: url('bg8.gif'); /* Tiled background image */
+  background-repeat: repeat;
+  font-family: 'Comic Sans MS', helvetica, sans-serif; /* Comic Sans font for that retro vibe */
+  color: #ff00ff; /* Magenta text color */
+}
+
+#container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#boxImage img {
+  border: 1px solid #000000; /* Red border around the box image */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Drop shadow effect */
+}
+
+.card-info {
+  border: 2px solid #00ff00; /* Green border around card info */
+  margin: 20px 0;
+  padding: 10px;
+	border-radius: 10px; /* Rounded corners */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Drop shadow effect */
+}
+
+button {
+  background-color: #000000; /* Bright green button background */
+  color: #000000; /* Black button text color */
+  border: 2px dotted #ff00ff; /* Dotted pink border */
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00cc00; /* Darker green background on hover */
+    color: #000000; /* Black button text on hover */
+}
+
+.printer-footnote {
+display:block;
+text-align:center;
+}
+
+.printer-footnote-2 {
+display:none;
+text-align:center;
+}
+
+/* Add animations to buttons */
+button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Animated GIFs */
+.card-image {
+  width: 220px; /* Adjust size as needed */
+  height: 220px; /* Adjust size as needed */
+  animation: pulse 1s infinite alternate; /* Example animation */
+  padding: 0px 0px 0px 0px;
+  margin: 20px 0px 0px 0px;
+    border-radius: 10px; /* Rounded corners */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Drop shadow effect */
+}
+
+@keyframes pulse {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+
+    /* Style for the mini MP3 player */
+    .mini-mp3-player {
+      position: relative;
+      width: 230px; /* Adjust the width as needed */
+      background-color: #f0f0f0;
+      padding: 3px;
+      border-radius: 3px;
+      margin:20px 20px 0px 20px;
+    }
+
+    .mini-mp3-player audio {
+      width: 100%;
+    }
+
+    .mini-mp3-player-controls {
+      display: none;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+      padding: 3px;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .mini-mp3-player:hover .mini-mp3-player-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .mini-mp3-player-controls button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 5px 8px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+.container {
+  max-width: 80%;
+  margin: 50px auto;
+  background: rgba(255, 255, 200, 0.9);
+  padding: 20px 0px 20px 0px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.card {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card img {
+  max-width: 20%;
+  height: auto;
+}
+
+.reading-types {
+  text-align: center;
+}
+
+.card-info {
+  text-align: center;
+}
+
+.card-title {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.card-image {
+  max-width: 260px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 12px;
+  max-width: 240px;
+  text-align: left;
+}
+
+/* Display all card readings in the same container */
+.reading-result {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Example hideous text animations */
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  25% {
+    transform: translate(2px, -2px);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translate(-2px, 2px);
+    opacity: 0.6;
+  }
+  75% {
+    transform: translate(2px, -2px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+.glitch-text {
+  animation: glitch 2s infinite alternate;
+}
+
+/* Example flashing text animation */
+@keyframes flash {
+  from {
+    color: #ff0000;
+  }
+  to {
+    color: #00ff00;
+  }
+}
+
+.flash-text {
+  animation: flash 0.5s infinite alternate;
+}
+
+/* Example slide-in animation */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slide-in-text {
+  animation: slideIn 1s forwards;
+}
+
+/* Example slide-out animation */
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.slide-out-text {
+  animation: slideOut 0.5s forwards;
+}
+
+/* Example rotate animation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-text {
+  animation: rotate 1s infinite linear;
+}
+
+/* Pop-up container styles */
+#popupContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  color: #ffffff; /* White text color */
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000; /* Ensure pop-up appears above other content */
+}
+
+#popupContent {
+  text-align: center;
+}
+
+.card-container {
+  perspective: 1000px;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  cursor: pointer; /* Add cursor pointer for clickable effect */
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: white;
+}
+
+.card-back {
+  background-color: #f0f0f0;
+  transform: rotateY(180deg);
+}
+
+.card-container.flipped .card {
+  transform: rotateY(180deg);
+}
+
+/* Print-specific styles */
+@media print {
+  body {
+    font-size: 12pt; /* Adjust font size for printing */
+  }
+
+  .mini-mp3-player {
+    display: none; /* Hide cards when printing */
+  }
+  
+  button {
+    display: none; /* Hide when printing */
+  }
+
+#boxImage {
+  display: none; 
+  }
+
+h1 {
+  display: none;
+  }
+
+.container {
+  width: 100%;
+  margin: 0px;
+    box-shadow:none;
+    padding: 0px;
+    align: center;
+}
+
+.card-image {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  box-shadow: none;
+  width:140px;
+}
+
+.card-info {
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  	border-radius: 10px;
+  box-shadow: none;
+  color: #000000;
+  width:180px;
+}
+
+#popupContainer {
+  display: none;
+}
+
+#popupContent {
+  display: none;
+}
+
+.printer-footnote {
+display:block;
+color: #000000;
+}
+
+.printer-footnote-2 {
+display:block;
+color: #000000;
+text-align:center;
+}
+
+}

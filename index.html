@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Time for a Freaxxin Tarot Reading</title>
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<div class="container">
+<h1 class="slide-in-text"><img src="torch12.gif" style="float:left;">Time for a Freaxxin Tarot Reading<img src="torch2.gif" style="float:right;"></h1>
+
+    <div id="boxImage">
+      <img src="box5.jpg" alt="Box Image" id="cardImage" style="display:block;margin-left:auto;margin-right:auto;width:320px;">
+      <br><br>
+    </div>
+
+  <!-- Container for the card reading -->
+  <div id="cardReading" class="reading-result">
+
+    <!-- Card reading will be displayed here -->
+  </div>
+
+  <div class="reading-types">
+    <button onclick="drawOneCard()"><p class="flash-text">One Card Reading</p></button>
+    <button onclick="drawThreeCardSpread()"><p class="flash-text">Three Card Reading</p></button>
+    <button onclick="drawFiveCardSpread()"><p class="flash-text">Five Card Reading</p></button>
+  </div>
+
+  <div class="printer-footnote">
+      <br>&nbsp<br><p>🧿 Images & Content copyright (c) 2024 Laughing Cat Publishing. 🧿</p>
+  </div>
+  <div class="printer-footnote-2">
+      <p>🌟 Let light into your heart and puh-leeze do not steal from small businesses. Go buy the damn deck if you like it so much! 💸</p>
+  </div>
+
+
+<!-- MIDI player container -->
+   <div class="mini-mp3-player">
+      <audio id="miniMp3Player" controls autoplay>
+        <source src="MyAquarius.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <!-- Print button -->
+    <button onclick="printPage()" style="float:right;margin:-66px 20px 0px 0px;"><p class="flash-text">Print This Reading</p></button>
+  
+  <div id="popupContainer" style="display: none;">
+  <div id="popupContent">
+    <h2>🌟 Whalecum to the Mood2 FREE fuxxin Tarot reading!!!!1! 🌟</h2>
+    <p>Ready to have your brains blown and your DNA rewritten by ChatGPT? <br> Ready for some sweet goddamn downloads from your spirit guides?<br> Ready to KNOW ALL and SEE ALL (that can be seen from your poot chakra)?</p>
+    <button onclick="closePopup()"><p class="flash-text">🔮 YASSSSS PLEEEEZZZZZ SWEET CARD MAMA, TAKE ME THERE. SHOW ME MY FATE 🔮</p></button>
+    <br>&nbsp</br>
+    <button onclick="location.href = 'https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.kickstarter.com%2Fprojects%2Fnataliemeraki%2Fmood2-the-2-disgusting-2-relatable-tarot-deck%3Fref%3D1jer2l%26fbclid%3DIwAR3Ar8ufvnh2BSnBSFaTSq1Ceh1kT879bxvsN9O1hoomAo6ovk8Q6SmbQWI&h=AT0JSZw3OF1sn_xc-lb9OJ6f3kTFuvl2D8-SKW3EI8F75KLKZOaSg_ZZiHvDD1_Nd3FU_y0dBGjgsnaGdGR6K6wpcr2G81RzN6UiW6uj7FtqFawdtDrAPqN_KOEBA4SyqVmHcA&__tn__=R]-R&c[0]=AT1X4Jq53-nOVSr3gxhzMz7Y1q1fmcpBIOco-x0czJS68qmoA_IWNO1TfisrrhG4df7jCd8WLY5NuHpuj3nrZKQxbCpEQujIOdj90-6Qfpt2Ce6z7XBCaYosEpzMX0UvEvxjUayVCK4S5XMBQU2QXqgCTuelUqxmIaKxqlbhATYEgKBf0L4';" id="myButton" class="float-left submit-button""><p class="flash-text">💸 FUXXXXXZZzzz THIS IS THE WRONG PLACE, TAKE ME TO THE KICKSTARTER FOR MOOD2 💸</p></button>
+  </div>
+</div>
+</div>
+
+
+<script src="tarot.js"></script>
+ <script>
+    var miniMp3Player = document.getElementById('miniMp3Player');
+
+    function playMiniMp3() {
+      miniMp3Player.play();
+    }
+
+    function pauseMiniMp3() {
+      miniMp3Player.pause();
+    }
+
+    function toggleMiniMute() {
+      miniMp3Player.muted = !miniMp3Player.muted;
+    }
+
+    function setMiniVolume(volume) {
+      miniMp3Player.volume = volume / 100;
+    }
+  </script>
+</body>
+</html>
